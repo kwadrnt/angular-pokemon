@@ -1,0 +1,9 @@
+.jumbotron {
+  background-color: 'yellow';
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #EEE;
+}
+.jumbotron .container {
+  height: 350px;
+}
