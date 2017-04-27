@@ -4,28 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>tunely</title>
+    <title>Pokemons</title>
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    <link rel="stylesheet" href="/public/styles/styles.css">
-
-    <!-- VENDOR SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <!-- ANGULAR ROUTE -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
-
-    <!-- APPLICATION SCRIPTS -->
+    <link rel="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
     <script src="/public/scripts/app.js"></script>
-    <!-- <script src="/public/scripts/controllers/AlbumsIndexController.js"></script> -->
-
+    <script src="/public/scripts/controllers/PokemonsIndexController.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/styles/styles.css">
 
   </head>
   <body>
     <div class="jumbotron">
       <h1>Welcome to our Poki Page</h1>
     </div>
+
+    <div ng-view></div>
   </body>
 
   </html>

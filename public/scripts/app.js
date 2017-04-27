@@ -1,3 +1,5 @@
+console.log('working app');
+
 angular
   .module('pokemonApp', ['ngRoute'])
   .config(config)
@@ -5,14 +7,15 @@ angular
   config.$inject = ['$routeProvider', '$locationProvider'];
 
   function config ($routeProvider, $locationProvider) {
+    console.log('function working');
     $routeProvider
       .when('/', {
-        templateUrl: '/templates/pokemons',
+        templateUrl: '../../templates/pokemons/index.html',
         controllerAs: 'pokemonsIndexCtrl',
         controller: 'PokemonsIndexController'
       })
-      .when('/albums/:id', {
-        templateUrl: '/templates/pokemons-show',
+      .when('/pokemons/:id', {
+        templateUrl: '../../templates/pokemons/show.html',
         controllerAs: 'pokemonsShowCtrl',
         controller: 'PokemonsController'
       })
@@ -21,3 +24,4 @@ angular
         enabled: true,
         requireBase: false
     });
+}
