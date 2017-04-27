@@ -1,5 +1,5 @@
 angular
-  .module('pokemonApp', ['ngRoute'])
+  .module('pokemonApp')
   .controller('PokemonsIndexController', PokemonsIndexController);
 
 PokemonsIndexController.$inject = ['$http'];
