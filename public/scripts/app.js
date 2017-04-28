@@ -17,7 +17,7 @@ angular
       .when('/pokemons/:id', {
         templateUrl: '../../templates/pokemons/show.html',
         controllerAs: 'pokemonsShowCtrl',
-        controller: 'PokemonsController'
+        controller: 'PokemonsShowController'
       })
 
       $locationProvider.html5Mode({
